@@ -1,7 +1,13 @@
 body.debug [class*="col-"]{
   /* height: 300px; */
-  background-color: pink;
+  background-color: #ffc0cb;
   border: 1px solid black;
+  height: 200px;
+}
+
+body.debug [class*="col-"] > .container [class*="col-"]{
+  height: 185px;
+  background-color: #f07f80;
 }
 
 *{
