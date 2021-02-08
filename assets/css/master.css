@@ -1,3 +1,18 @@
 body, html{
   font-size: 22px;
 }
+
+[class*="col-"]{
+  position: relative;
+}
+
+[class*="col-"] p{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+body.debug .container > [class*="col-"]{
+  padding: 6px;
+  }

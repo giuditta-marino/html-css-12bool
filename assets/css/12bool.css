@@ -1,13 +1,13 @@
-body.debug [class*="col-"]{
-  /* height: 300px; */
+body.debug .container > [class*="col-"]{
   background-color: #ffc0cb;
   border: 1px solid black;
   height: 200px;
-}
+  }
 
 body.debug [class*="col-"] > .container [class*="col-"]{
   height: 185px;
   background-color: #f07f80;
+  border: 1px solid #ffffff;
 }
 
 *{
@@ -31,6 +31,7 @@ body.debug [class*="col-"] > .container [class*="col-"]{
   clear: both;
 }
 
+/* COLONNE LARGHEZZE */
 .col-1{
   width: calc(100% / 12);
 }
@@ -80,6 +81,7 @@ body.debug [class*="col-"] > .container [class*="col-"]{
   margin-left: calc(100% / 12);
 }
 
+/* OFFSET LARGHEZZE */
 .col-2-offset{
   margin-left: calc(100% / 6);
 }
